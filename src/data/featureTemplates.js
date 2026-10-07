@@ -1,0 +1,97 @@
+/**
+ * Pre-defined software feature templates for the Estimation Wizard
+ */
+
+export const FEATURE_CATEGORIES = [
+  'All Categories',
+  'Security & Auth',
+  'AI & Intelligent Agents',
+  'Core UI & Dashboard',
+  'Payments & Billing',
+  'Communication & Social',
+  'Data & Integrations',
+];
+
+export const PRESET_FEATURE_TEMPLATES = [
+  {
+    id: 'tpl_auth_sso',
+    name: 'Single Sign-On (SSO) & MFA',
+    category: 'Security & Auth',
+    description: 'Enterprise OAuth2/SAML SSO with Google/Microsoft, multi-factor authentication (TOTP/SMS), and session revocation.',
+    defaultComplexity: 'Medium',
+    defaultHours: 60,
+    priority: 'MVP',
+  },
+  {
+    id: 'tpl_rbac_multi_tenant',
+    name: 'Multi-Tenant Workspace & RBAC',
+    category: 'Security & Auth',
+    description: 'Organization management, member invitations, role hierarchies (Admin, Member, Viewer), and data domain isolation.',
+    defaultComplexity: 'High',
+    defaultHours: 90,
+    priority: 'MVP',
+  },
+  {
+    id: 'tpl_ai_rag',
+    name: 'RAG Knowledge Assistant (Vector DB)',
+    category: 'AI & Intelligent Agents',
+    description: 'Document chunking, vector embedding generation (Pinecone/pgvector), semantic search, and streaming LLM responses.',
+    defaultComplexity: 'High',
+    defaultHours: 120,
+    priority: 'High',
+  },
+  {
+    id: 'tpl_ai_doc_parser',
+    name: 'AI Document & Receipt Extractor',
+    category: 'AI & Intelligent Agents',
+    description: 'Automated OCR parsing of PDFs/images with structured JSON extraction, schema validation, and fallback review UI.',
+    defaultComplexity: 'Medium',
+    defaultHours: 70,
+    priority: 'High',
+  },
+  {
+    id: 'tpl_analytics_dashboard',
+    name: 'Interactive Analytics & Metrics Dashboard',
+    category: 'Core UI & Dashboard',
+    description: 'Customizable KPI cards, telemetry graphs, date filtering, and CSV/PDF export generation.',
+    defaultComplexity: 'Medium',
+    defaultHours: 65,
+    priority: 'High',
+  },
+  {
+    id: 'tpl_notification_center',
+    name: 'Multi-Channel Notification Center',
+    category: 'Communication & Social',
+    description: 'In-app notification bell, real-time WebSockets, email alerts via SendGrid/Resend, and user preference controls.',
+    defaultComplexity: 'Medium',
+    defaultHours: 50,
+    priority: 'Nice-to-have',
+  },
+  {
+    id: 'tpl_stripe_subscriptions',
+    name: 'Stripe Subscription & Invoicing',
+    category: 'Payments & Billing',
+    description: 'Tiered subscription billing, self-service customer portal, failed payment dunning, and invoice generation.',
+    defaultComplexity: 'Medium',
+    defaultHours: 55,
+    priority: 'MVP',
+  },
+  {
+    id: 'tpl_webhook_integrations',
+    name: 'Public Developer Webhooks & API Keys',
+    category: 'Data & Integrations',
+    description: 'Outbound webhook delivery with retry backoff, cryptographic signature verification, and API key management.',
+    defaultComplexity: 'Medium',
+    defaultHours: 45,
+    priority: 'Nice-to-have',
+  },
+  {
+    id: 'tpl_cloud_file_manager',
+    name: 'Cloud File & Asset Storage (S3)',
+    category: 'Core UI & Dashboard',
+    description: 'Direct-to-S3 presigned uploads, drag-and-drop file manager, thumbnail generation, and access-token authorization.',
+    defaultComplexity: 'Low',
+    defaultHours: 35,
+    priority: 'MVP',
+  },
+];

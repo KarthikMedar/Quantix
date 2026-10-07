@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Shield -->
+  <rect width="48" height="48" rx="12" fill="url(#bgGrad)" />
+  <rect width="48" height="48" rx="12" stroke="url(#brandGrad)" stroke-width="1.5" stroke-opacity="0.4" />
+  
+  <!-- Outer Neural / Code Brackets -->
+  <path d="M16 17L11 24L16 31" stroke="url(#brandGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M32 17L37 24L32 31" stroke="url(#brandGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Analytics / Calculation Pulse & AI Node -->
+  <path d="M18 25L21 21L25 27L28 23L30 25" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Center AI Core Node -->
+  <circle cx="24" cy="18" r="2.5" fill="#60A5FA" />
+  <circle cx="24" cy="18" r="4.5" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.6" />
+  <circle cx="24" cy="30" r="1.5" fill="#8B5CF6" />
+</svg>
